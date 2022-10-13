@@ -9,11 +9,7 @@ html {
 body {
   background-color: hsla(211, 68%, 94%, 0.363);
   font-family: "Plus Jakarta Sans", sans-serif;
-  top: auto;
-}
-
-.inavtive {
-  display: none;
+  /* top: auto; */
 }
 
 .main-container {
@@ -33,6 +29,10 @@ body {
   display: flex;
   margin-bottom: 2rem;
 }
+.notificacion {
+  font-weight: 900;
+}
+
 .noti-number {
   background-color: hsl(219, 85%, 26%);
   color: white;
@@ -61,11 +61,11 @@ span {
 }
 
 .todos-leidos:hover {
-  color: hsl(219, 85%, 26%);
+  color: hsl(219, 86%, 47%);
 }
 
 .chat {
-  background-color: hsla(219, 100%, 50%, 0.13);
+  /* background-color: hsla(219, 100%, 50%, 0.13); */
   /* height: 6.5rem; */
   margin-bottom: 1rem;
   text-decoration: none;
@@ -95,6 +95,7 @@ img {
 
 .mensaje {
   background-color: hsla(219, 95%, 50%, 0.24);
+  width: 90%;
   display: flex;
   position: relative;
   left: 5rem;
@@ -105,26 +106,40 @@ img {
 }
 
 .name1 {
-  font-weight: 700;
+  font-weight: 800;
+  cursor: pointer;
 }
-.name2 {
-  font-weight: 700;
+
+.name {
+  color: hsl(219, 85%, 26%);
+  font-weight: 800;
+  cursor: pointer;
+}
+/* .name2 {
+  color: hsl(219, 85%, 26%);
+  font-weight: 800;
+  cursor: pointer;
 }
 .name3 {
-  font-weight: 700;
+  font-weight: 800;
+  cursor: pointer;
 }
 .name4 {
-  font-weight: 700;
+  font-weight: 800;
+  cursor: pointer;
 }
 .name5 {
-  font-weight: 700;
+  font-weight: 800;
+  cursor: pointer;
 }
 .name6 {
-  font-weight: 700;
+  font-weight: 800;
+  cursor: pointer;
 }
 .name7 {
-  font-weight: 700;
-}
+  font-weight: 800;
+  cursor: pointer;
+} */
 
 .image {
   width: 5rem;
@@ -135,6 +150,30 @@ img {
   cursor: pointer;
 }
 
+.mensaje-IA {
+  color: rgba(0, 0, 0, 0.459);
+  font-weight: 600;
+}
+
+.etiqueta {
+  color: hsl(219, 85%, 26%);
+  font-weight: 600;
+  cursor: pointer;
+}
+.etiquet {
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.punto {
+  color: red;
+  font-size: 1rem;
+}
+.time {
+  color: rgba(0, 0, 0, 0.61);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -143,4 +182,8 @@ img {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+.inactive {
+  display: none;
 }

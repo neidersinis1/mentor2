@@ -22,6 +22,16 @@
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <link rel="stylesheet" href="styles.css" />
+    <script
+      defer
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      defer
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </head>
   <body>
     <main class="main-container">
@@ -34,34 +44,61 @@
       </div>
       <div>
         <ul class="chat-container">
-          <li class="chat">
-            <img src="./assets/images/avatar-mark-webber.webp" alt="foto" />
-            <div>
-              <p>
-                <span class="name1">Mark Webber</span>
-                reacted to your recent post My first tournament today!
-              </p>
-              <p>1m ago</p>
+          <li>
+            <div class="chat">
+              <img src="./assets/images/avatar-mark-webber.webp" alt="foto" />
+              <div>
+                <p>
+                  <span class="name">Mark Webber</span>
+                  <span class="mensaje-IA"> reacted to your recent post</span>
+                  <span class="etiqueta">My first tournament today!</span>
+                  <span class="punto"
+                    ><ion-icon name="radio-button-on-outline"></ion-icon
+                  ></span>
+                </p>
+                <p class="time">1m ago</p>
+              </div>
             </div>
+            <p class="mensaje inactive"></p>
           </li>
 
-          <li class="chat">
-            <img src="./assets/images/avatar-angela-gray.webp" alt="foto" />
-            <div>
-              <p><span class="name2">Angela Gray</span>followed you</p>
-              <p>5m ago</p>
+          <li>
+            <div class="chat">
+              <img src="./assets/images/avatar-angela-gray.webp" alt="foto" />
+              <div>
+                <p>
+                  <span class="name">Angela Gray</span>
+                  <span class="mensaje-IA"> followed you</span>
+                  <span class="etiqueta"></span>
+                  <span class="punto"
+                    ><ion-icon name="radio-button-on-outline"></ion-icon
+                  ></span>
+                </p>
+                <p class="time">5m ago</p>
+              </div>
             </div>
+            <p class="mensaje inactive"></p>
           </li>
 
-          <li class="chat">
-            <img src="./assets/images/avatar-jacob-thompson.webp" alt="foto" />
-            <div>
-              <p>
-                <span class="name3">Jacob Thompson</span> has joined your group
-                Chess Club
-              </p>
-              <p>1 day ago</p>
+          <li>
+            <div class="chat">
+              <img
+                src="./assets/images/avatar-jacob-thompson.webp"
+                alt="foto"
+              />
+              <div>
+                <p>
+                  <span class="name">Jacob Thompson</span>
+                  <span class="mensaje-IA">has joined your group</span>
+                  <span class="etiqueta">Chess Club</span>
+                  <span class="punto"
+                    ><ion-icon name="radio-button-on-outline"></ion-icon
+                  ></span>
+                </p>
+                <p class="time">1 day ago</p>
+              </div>
             </div>
+            <p class="mensaje inactive"></p>
           </li>
 
           <li>
@@ -72,56 +109,81 @@
               />
               <div>
                 <p>
-                  <span class="name4">Rizky Hasanuddin</span> sent you a private
-                  message
+                  <span class="name">Rizky Hasanuddin</span>
+                  <span class="mensaje-IA">sent you a private message</span>
+                  <span class="etiqueta"></span>
+                  <span class="punto"></span>
                 </p>
-                <p>5 days ago</p>
+                <p class="time">5 days ago</p>
               </div>
             </div>
-            <p class="mensaje">
+            <p class="mensaje inactive">
               Hello, thanks for setting up the Chess Club. I've been a member
               for a few weeks now and I'm already having lots of fun and
               improving my game.
             </p>
           </li>
 
-          <li class="chat">
-            <img src="./assets/images/avatar-kimberly-smith.webp" alt="foto" />
-            <div>
-              <p>
-                <span class="name5">Kimberly Smith</span> commented on your
-                picture
-              </p>
-              <p>1 week ago</p>
-            </div>
-            <div class="image">
+          <li>
+            <div class="chat">
               <img
-                src="./assets/images/image-chess.webp"
-                alt="image etiquetada"
+                src="./assets/images/avatar-kimberly-smith.webp"
+                alt="foto"
               />
+              <div>
+                <p>
+                  <span class="name">Kimberly Smith</span>
+                  <span class="mensaje-IA">commented on your picture</span>
+                  <span class="etiqueta"></span>
+                  <span class="punto"></span>
+                </p>
+                <p class="time">1 week ago</p>
+              </div>
+              <div class="image">
+                <img
+                  src="./assets/images/image-chess.webp"
+                  alt="image etiquetada"
+                />
+              </div>
             </div>
+            <p class="mensaje inactive"></p>
           </li>
 
-          <li class="chat">
-            <img src="./assets/images/avatar-nathan-peterson.webp" alt="foto" />
-            <div>
-              <p>
-                <span class="name6">Nathan Peterson</span>
-                reacted to your recent post 5 end-game strategies to increase
-                your win rate
-              </p>
-              <p>2 weeks ago</p>
+          <li>
+            <div class="chat">
+              <img
+                src="./assets/images/avatar-nathan-peterson.webp"
+                alt="foto"
+              />
+              <div>
+                <p>
+                  <span class="name">Nathan Peterson</span>
+                  <span class="mensaje-IA">reacted to your recent post </span>
+                  <span class="etiqueta"
+                    >5 end-game strategies to increase your win rate</span
+                  >
+                  <span class="punto"></span>
+                </p>
+                <p class="time">2 weeks ago</p>
+              </div>
             </div>
+            <p class="mensaje inactive"></p>
           </li>
 
-          <li class="chat">
-            <img src="./assets/images/avatar-anna-kim.webp" alt="foto" />
-            <div>
-              <p>
-                <span class="name7">Anna Kim</span> left the group Chess Club
-              </p>
-              <p>2 weeks ago</p>
+          <li>
+            <div class="chat">
+              <img src="./assets/images/avatar-anna-kim.webp" alt="foto" />
+              <div>
+                <p>
+                  <span class="name">Anna Kim</span>
+                  <span class="mensaje-IA">left the group </span>
+                  <span class="etiqueta">Chess Club</span>
+                  <span class="punto"></span>
+                </p>
+                <p class="time">2 weeks ago</p>
+              </div>
             </div>
+            <p class="mensaje inactive"></p>
           </li>
         </ul>
       </div>
@@ -132,5 +194,6 @@
         >. Coded by <a href="#" target="_blank">Nesiflo</a>.
       </div>
     </main>
+    <script src="./main.js"></script>
   </body>
 </html>
