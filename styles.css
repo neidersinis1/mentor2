@@ -1,0 +1,146 @@
+html {
+  font-size: 62.5%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsla(211, 68%, 94%, 0.363);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  top: auto;
+}
+
+.inavtive {
+  display: none;
+}
+
+.main-container {
+  background-color: white;
+  width: 60%;
+  height: 90%;
+  font-size: 1.3rem;
+  position: absolute;
+  margin-top: 3rem;
+  left: 25rem;
+  padding: 2rem 2rem;
+  border-radius: 0.9rem;
+  /* right: 30rem; */
+}
+
+.header-container {
+  display: flex;
+  margin-bottom: 2rem;
+}
+.noti-number {
+  background-color: hsl(219, 85%, 26%);
+  color: white;
+  font-size: 1.3rem;
+  width: 1.7rem;
+  text-align: center;
+  margin: 0.4rem;
+  border-radius: 0.2rem;
+  display: inline-block;
+}
+span {
+  /* background-color: hsl(219, 85%, 26%); */
+  /* color: white; */
+  /* font-size: 1.3rem; */
+  /* width: 1.7rem; */
+  /* text-align: center; */
+  margin: 0.4rem;
+  border-radius: 0.2rem;
+  display: inline-block;
+}
+
+.todos-leidos {
+  position: absolute;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.todos-leidos:hover {
+  color: hsl(219, 85%, 26%);
+}
+
+.chat {
+  background-color: hsla(219, 100%, 50%, 0.13);
+  /* height: 6.5rem; */
+  margin-bottom: 1rem;
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+li {
+  /* background-color: hsla(219, 100%, 50%, 0.13); */
+  /* height: 6.5rem; */
+  /* margin-bottom: 1rem; */
+  /* text-decoration: none; */
+  list-style: none;
+  /* display: flex;
+  align-items: center; */
+  border-radius: 1rem;
+}
+img {
+  width: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.mensaje {
+  background-color: hsla(219, 95%, 50%, 0.24);
+  display: flex;
+  position: relative;
+  left: 5rem;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+  padding: 0.3rem;
+  cursor: pointer;
+}
+
+.name1 {
+  font-weight: 700;
+}
+.name2 {
+  font-weight: 700;
+}
+.name3 {
+  font-weight: 700;
+}
+.name4 {
+  font-weight: 700;
+}
+.name5 {
+  font-weight: 700;
+}
+.name6 {
+  font-weight: 700;
+}
+.name7 {
+  font-weight: 700;
+}
+
+.image {
+  width: 5rem;
+  /* background-color: aqua; */
+  margin: 2rem;
+  position: absolute;
+  right: 0.5rem;
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 10rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
