@@ -15,7 +15,7 @@ body {
   background-color: white;
   width: 60%;
   height: 90%;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   position: relative;
   margin: auto;
   margin-top: 3rem;
@@ -174,8 +174,8 @@ img {
 }
 
 .etiqueta1 {
-  color: black;
-  font-weight: 600;
+  color: hsl(239, 96%, 30%);
+  font-weight: 800;
   cursor: pointer;
 }
 
