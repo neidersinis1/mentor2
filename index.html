@@ -38,23 +38,26 @@
       <div class="header-container">
         <div class="notificacion">
           Notifications
-          <span class="noti-number">3</span>
+          <span class="noti-number"></span>
         </div>
         <div class="todos-leidos">Mark all as read</div>
       </div>
-      <div>
-        <ul class="chat-container">
+      <div class="chat-container">
+        <ul class="notification-list">
           <li>
             <div class="chat">
               <img src="./assets/images/avatar-mark-webber.webp" alt="foto" />
               <div>
                 <p>
-                  <span class="name">Mark Webber</span>
-                  <span class="mensaje-IA"> reacted to your recent post</span>
-                  <span class="etiqueta">My first tournament today!</span>
-                  <span class="punto"
-                    ><ion-icon name="radio-button-on-outline"></ion-icon
-                  ></span>
+                  <span id="n1" class="name">Mark Webber</span>
+                  <span class="mensaje-IA1"> reacted to your recent post</span>
+                  <span id="e1" class="etiquet"
+                    >My first tournament today!</span
+                  >
+
+                  <span class="punto">
+                    <ion-icon name="radio-button-on-outline"></ion-icon>
+                  </span>
                 </p>
                 <p class="time">1m ago</p>
               </div>
@@ -67,9 +70,9 @@
               <img src="./assets/images/avatar-angela-gray.webp" alt="foto" />
               <div>
                 <p>
-                  <span class="name">Angela Gray</span>
-                  <span class="mensaje-IA"> followed you</span>
-                  <span class="etiqueta"></span>
+                  <span id="n2" class="name">Angela Grey</span>
+                  <span class="mensaje-IA1">Folowed yuo</span>
+                  <span id="e2" class="etiquet"></span>
                   <span class="punto"
                     ><ion-icon name="radio-button-on-outline"></ion-icon
                   ></span>
@@ -88,9 +91,9 @@
               />
               <div>
                 <p>
-                  <span class="name">Jacob Thompson</span>
-                  <span class="mensaje-IA">has joined your group</span>
-                  <span class="etiqueta">Chess Club</span>
+                  <span id="n3" class="name">Jacob Thompson</span>
+                  <span class="mensaje-IA1">Has joined your group</span>
+                  <span id="e3" class="etiquet inactivo">chess club</span>
                   <span class="punto"
                     ><ion-icon name="radio-button-on-outline"></ion-icon
                   ></span>
@@ -102,7 +105,7 @@
           </li>
 
           <li>
-            <div class="chat">
+            <div class="chat1">
               <img
                 src="./assets/images/avatar-rizky-hasanuddin.webp"
                 alt="foto"
@@ -110,47 +113,52 @@
               <div>
                 <p>
                   <span class="name">Rizky Hasanuddin</span>
-                  <span class="mensaje-IA">sent you a private message</span>
-                  <span class="etiqueta"></span>
-                  <span class="punto"></span>
+                  <span class="mensaje-IA1">sent you a private message</span>
+                  <span class="etiquet"></span>
+                  <span class="inactive">
+                    <ion-icon name="radio-button-on-outline"></ion-icon>
+                  </span>
                 </p>
-                <p class="time">5 days ago</p>
+                <p class="time">5 day ago</p>
               </div>
             </div>
-            <p class="mensaje inactive">
-              Hello, thanks for setting up the Chess Club. I've been a member
-              for a few weeks now and I'm already having lots of fun and
-              improving my game.
+            <p class="mensaje1">
+              Hello, thanks for setting up the Chess Club. I have been a member
+              for a few weeks now and I am already having lots of fun and
+              improving my game
             </p>
           </li>
 
           <li>
-            <div class="chat">
-              <img
-                src="./assets/images/avatar-kimberly-smith.webp"
-                alt="foto"
-              />
+            <div class="chat1">
+              <picture>
+                <img
+                  src="./assets/images/avatar-kimberly-smith.webp"
+                  alt="foto"
+                />
+              </picture>
               <div>
                 <p>
                   <span class="name">Kimberly Smith</span>
-                  <span class="mensaje-IA">commented on your picture</span>
-                  <span class="etiqueta"></span>
-                  <span class="punto"></span>
+                  <span class="mensaje-IA1">commented on your picture</span>
+                  <span class="etiquet"></span>
+                  <span class="inactive">
+                    <ion-icon name="radio-button-on-outline"></ion-icon>
+                  </span>
                 </p>
                 <p class="time">1 week ago</p>
               </div>
-              <div class="image">
-                <img
-                  src="./assets/images/image-chess.webp"
-                  alt="image etiquetada"
-                />
+              <div class="div-image">
+                <picture class="picture-image">
+                  <img src="./assets/images/image-chess.webp" alt="foto" />
+                </picture>
               </div>
             </div>
-            <p class="mensaje inactive"></p>
+            <!-- <p class="mensaje4"></p> -->
           </li>
 
           <li>
-            <div class="chat">
+            <div class="chat1">
               <img
                 src="./assets/images/avatar-nathan-peterson.webp"
                 alt="foto"
@@ -158,35 +166,46 @@
               <div>
                 <p>
                   <span class="name">Nathan Peterson</span>
-                  <span class="mensaje-IA">reacted to your recent post </span>
-                  <span class="etiqueta"
+                  <span class="mensaje-IA1">reaced to your recent post</span>
+                  <span class="etiquet"
                     >5 end-game strategies to increase your win rate</span
                   >
-                  <span class="punto"></span>
+                  <span class="inactive">
+                    <ion-icon name="radio-button-on-outline"></ion-icon>
+                  </span>
                 </p>
-                <p class="time">2 weeks ago</p>
+                <p class="time">2 week ago</p>
+                <div class="image">
+                  <!-- <img src="./assets/images/image-chess.webp" alt="foto" /> -->
+                </div>
               </div>
             </div>
-            <p class="mensaje inactive"></p>
+            <!-- <p class="mensaje4"></p> -->
           </li>
 
           <li>
-            <div class="chat">
+            <div class="chat1">
               <img src="./assets/images/avatar-anna-kim.webp" alt="foto" />
               <div>
                 <p>
                   <span class="name">Anna Kim</span>
-                  <span class="mensaje-IA">left the group </span>
-                  <span class="etiqueta">Chess Club</span>
-                  <span class="punto"></span>
+                  <span class="mensaje-IA1">left the group</span>
+                  <span class="etiquet">chess club</span>
+                  <span class="inactive">
+                    <ion-icon name="radio-button-on-outline"></ion-icon>
+                  </span>
                 </p>
-                <p class="time">2 weeks ago</p>
+                <p class="time">2 week ago</p>
+                <div class="image">
+                  <!-- <img src="./assets/images/image-chess.webp" alt="foto" /> -->
+                </div>
               </div>
             </div>
-            <p class="mensaje inactive"></p>
+            <!-- <p class="mensaje4"></p> -->
           </li>
         </ul>
       </div>
+
       <div class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
@@ -194,6 +213,7 @@
         >. Coded by <a href="#" target="_blank">Nesiflo</a>.
       </div>
     </main>
+
     <script src="./main.js"></script>
   </body>
 </html>
