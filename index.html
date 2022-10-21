@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,12 +14,10 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="./assets/images/favicon-32x32.png"
     />
 
     <title>Notifications Page</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <link rel="stylesheet" href="styles.css" />
     <script
       defer
@@ -35,26 +32,27 @@
   </head>
   <body>
     <main class="main-container">
-      <div class="header-container">
-        <div class="notificacion">
-          Notifications
+      <header class="header-container">
+        <div class="notification">
+          <h1>Notifications</h1>
           <span class="noti-number"></span>
         </div>
         <div class="todos-leidos">Mark all as read</div>
-      </div>
+      </header>
       <div class="chat-container">
         <ul class="notification-list">
           <li>
             <div class="chat">
-              <img src="./assets/images/avatar-mark-webber.webp" alt="foto" />
+              <picture>
+                <img src="./assets/images/avatar-mark-webber.webp" alt="foto" />
+              </picture>
               <div>
                 <p>
                   <span id="n1" class="name">Mark Webber</span>
                   <span class="mensaje-IA1"> reacted to your recent post</span>
-                  <span id="e1" class="etiquet"
-                    >My first tournament today!</span
-                  >
-
+                  <span id="e1" class="etiquet">
+                    My first tournament today!
+                  </span>
                   <span class="punto">
                     <ion-icon name="radio-button-on-outline"></ion-icon>
                   </span>
@@ -67,7 +65,9 @@
 
           <li>
             <div class="chat">
-              <img src="./assets/images/avatar-angela-gray.webp" alt="foto" />
+              <picture>
+                <img src="./assets/images/avatar-angela-gray.webp" alt="foto" />
+              </picture>
               <div>
                 <p>
                   <span id="n2" class="name">Angela Grey</span>
@@ -85,15 +85,17 @@
 
           <li>
             <div class="chat">
-              <img
-                src="./assets/images/avatar-jacob-thompson.webp"
-                alt="foto"
-              />
+              <picture>
+                <img
+                  src="./assets/images/avatar-jacob-thompson.webp"
+                  alt="foto"
+                />
+              </picture>
               <div>
                 <p>
                   <span id="n3" class="name">Jacob Thompson</span>
                   <span class="mensaje-IA1">Has joined your group</span>
-                  <span id="e3" class="etiquet inactivo">chess club</span>
+                  <span id="e3" class="etiqueta1 inactivo">chess club</span>
                   <span class="punto"
                     ><ion-icon name="radio-button-on-outline"></ion-icon
                   ></span>
@@ -106,10 +108,12 @@
 
           <li>
             <div class="chat1">
-              <img
-                src="./assets/images/avatar-rizky-hasanuddin.webp"
-                alt="foto"
-              />
+              <picture>
+                <img
+                  src="./assets/images/avatar-rizky-hasanuddin.webp"
+                  alt="foto"
+                />
+              </picture>
               <div>
                 <p>
                   <span class="name">Rizky Hasanuddin</span>
@@ -159,10 +163,12 @@
 
           <li>
             <div class="chat1">
-              <img
-                src="./assets/images/avatar-nathan-peterson.webp"
-                alt="foto"
-              />
+              <picture>
+                <img
+                  src="./assets/images/avatar-nathan-peterson.webp"
+                  alt="foto"
+                />
+              </picture>
               <div>
                 <p>
                   <span class="name">Nathan Peterson</span>
@@ -185,12 +191,14 @@
 
           <li>
             <div class="chat1">
-              <img src="./assets/images/avatar-anna-kim.webp" alt="foto" />
+              <picture>
+                <img src="./assets/images/avatar-anna-kim.webp" alt="foto" />
+              </picture>
               <div>
                 <p>
                   <span class="name">Anna Kim</span>
                   <span class="mensaje-IA1">left the group</span>
-                  <span class="etiquet">chess club</span>
+                  <span class="etiqueta1">chess club</span>
                   <span class="inactive">
                     <ion-icon name="radio-button-on-outline"></ion-icon>
                   </span>

@@ -23,22 +23,10 @@ let name13 = document.querySelector("#n3");
 let chatn3 = document.querySelector(".chat ")[2];
 
 let notification = document.querySelectorAll(".punto").length * 1;
-// localStorage.setItem("valorEnLS", notification);
 
 let notiNumber = document.querySelector(".noti-number");
-if (notification == "0") {
-  notiNumber.classList.add("inactive");
-} else {
-}
 
 notiNumber.innerHTML = `${notification}`;
-
-if (notification.length == 0) {
-  notiNumber.setAttribute("class", "inactive");
-} else {
-}
-
-// console.log(notiNumber);
 
 let name1 = document.querySelectorAll(".name1");
 
@@ -48,30 +36,36 @@ let mensaje1 = document.querySelectorAll(".mensaje1");
 
 name11.addEventListener("click", () => {
   let notification = document.querySelectorAll(".punto").length - 1 * 0.99;
-  Math.floor(notification);
   localStorage.setItem("valorEnLS", notification);
 });
 
 name11.addEventListener("click", () => {
   let notification = localStorage.getItem("valorEnLS");
   document.querySelector(".noti-number").innerHTML = notification;
-  // notiNumber.innerHTML = `${notification}`;
 });
 
 name11.addEventListener("click", () => {
   localStorage.removeItem("valorEnLS");
 });
 
+etiquet1.addEventListener("click", () => {
+  let notification = document.querySelectorAll(".punto").length - 1 * 0.99;
+  localStorage.setItem("valorEnLS", notification);
+});
+
+etiquet1.addEventListener("click", () => {
+  let notification = localStorage.getItem("valorEnLS");
+  document.querySelector(".noti-number").innerHTML = notification;
+});
+
 name12.addEventListener("click", () => {
   let notification = document.querySelectorAll(".punto").length - 1 * 0.99;
 
   localStorage.setItem("valorEnLS", notification);
-  // console.log(notification);
 });
 name12.addEventListener("click", () => {
   let notification = localStorage.getItem("valorEnLS");
   document.querySelector(".noti-number").innerHTML = notification;
-  // notiNumber.innerHTML = +`${notification}`;
 });
 
 name12.addEventListener("click", () => {
@@ -82,12 +76,10 @@ name13.addEventListener("click", () => {
   let notification = document.querySelectorAll(".punto").length - 1 * 0.99;
 
   localStorage.setItem("valorEnLS", notification);
-  // console.log(notification);
 });
 name13.addEventListener("click", () => {
   let notification = localStorage.getItem("valorEnLS");
   document.querySelector(".noti-number").innerHTML = notification;
-  // notiNumber.innerHTML = notification;
 });
 
 name13.addEventListener("click", () => {
@@ -127,9 +119,6 @@ function markAllRead() {
 function marketiquet1() {
   point1.classList.replace("punto", "inactive");
   chate1.classList.replace("chat", "chat1");
-  // for (let i = 0; i < chate1.length; i++) {
-  //   chate1[i].setAttribute("class", "chat1");
-  // }
 }
 
 function markName11() {
@@ -138,11 +127,6 @@ function markName11() {
 }
 
 function marketiquet2() {
-  // for (let i = 0; i < point2.length; i++) {
-  //   point2[i].setAttribute("class", "inactive");
-  // }
-  // point2.setAttribute("class", "inactive");
-  // point2.classList.add("inactive");
   // chate2.classList.replace("chat", "chat1");
 }
 
@@ -152,9 +136,6 @@ function markName12() {
 }
 
 function marketiquet3() {
-  // for (let i = 0; i < point2.length; i++) {
-  //   point2[i].setAttribute("class", "inactive");
-  // }
   // point2.setAttribute("class", "inactive");
   // point2.classList.add("inactive");
   // chate2.classList.replace("chat", "chat1");
